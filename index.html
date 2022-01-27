@@ -50,6 +50,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log(cold_count);
 
         }
+	
+	function printAnswer() {
+		var resultText = document.getElementById("results");
+resultText.innerHTML = "Probability it is allergies =" + allergy_count + "<br> Probability it is a cold =" + cold_count; 
+	}
 
   </script>
 
@@ -154,10 +159,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
 	
 	
-	function printAnswer() {
-		var resultText = document.getElementById("results");
-resultText.innerHTML = "Probability it is allergies =" + allergy_count + "<br> Probability it is a cold =" + cold_count; 
-	}
+	
 
 </script>
 	
