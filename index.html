@@ -43,20 +43,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 		alert(allergy_count);
-		<!--console.log(allergy_count);-->
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
 		alert(cold_count);
-		<!--console.log(cold_count);-->
 <!-- These are my two functions for each of the variables (allergy_count and cold_count). Once each funciton is run, the number will increase by 1. -->
         }
 	
-	<!-- function printAnswer() --> 
+	function printAnswer()
 	{
 		var resultText = document.getElementById("results");
-resultText.innerHTML = "Probability it is allergies = " + 25 * allergy_count / 100  + "<br> Probability it is a cold = " + 25 * cold_count / 100; 
+		resultText.innerHTML = "Probability it is allergies = " + allergy_count + "<br> Probability it is a cold = " + cold_count ; 
 
 <!-- This function outputs the result of what was recorded in the allergy_count and cold_count variables. -->
 	}
