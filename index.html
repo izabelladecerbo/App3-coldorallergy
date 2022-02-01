@@ -37,11 +37,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-<!-- Above are the initialized variables that my code will take into account. -->
+<!-- Above are the initialized variables that my code will take into account at the "allergyAdd()" and "coldAdd()" functions. -->
 	
-	<!-- var allergyPercent = (allergy_count/4) * 100; -->
-	<!-- var coldPercent (cold_count/4) * 100; -->
-<!-- Above are the variables that my code will take into account at the results function. -->
+	var allergyPercent = 0;
+	var coldPercent = 0;
+<!-- Above are the initialized variables that my code will take into account at the "printAnswer()" function. -->
 	
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -54,12 +54,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- Above are the two functions for each of the variables (allergy_count and cold_count). Once each funciton is run, the number will increase by 1. -->
         }
 	
-	function printAnswer()
-	
-	{
+	function printAnswer(){
+		allergyPercent = (allergy_count/4) * 100;
+		coldPercent = (cold_count/4) * 100;
+
+<!-- Above is two function to display the results of the questionnaire. Once the funciton is run, the allergy and cold percents will be calculated and displayed. -->
+	}
 		
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies = " + (allergy_count/4) * 100 + "%" + "<br> Probability it is a cold = " + (cold_count/4) * 100 + "%" + ; 
+		resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%" + ; 
 
 <!-- The above function outputs the result of what was recorded in the allergy_count and cold_count variables and manipulated in the allergyPercent and coldPercent variables. -->
 	}
