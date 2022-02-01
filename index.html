@@ -42,18 +42,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        
 	function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
+
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
-		alert(cold_count);
+
 <!-- Above are the two functions for each of the variables (allergy_count and cold_count). Once each funciton is run, the result will increase by 1. -->
 		
         }
 	
 <!-- The function below allows for the probabilities of both cold and allergies to be displayed on the results page. -->	
-	function printAnswer(){
+	function printAnswer()
+	
+	{
 		
 		var resultText = document.getElementById("results");
 		var coldPercent = (cold_count/4) * 100
