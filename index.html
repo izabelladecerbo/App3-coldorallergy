@@ -35,13 +35,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
+      
+<!-- Lines 40-41 are the initialized variables that my code will take into account at the "allergyAdd()" and "coldAdd()" functions. -->
+	var allergy_count = 0;
         var cold_count = 0;
-<!-- Above are the initialized variables that my code will take into account at the "allergyAdd()" and "coldAdd()" functions. -->
-	
-	var allergyPercent = 0;
-	var coldPercent = 0;
-<!-- Above are the initialized variables that my code will take into account at the "printAnswer()" function. -->
+	var allergyPercent = (allergy_count/4) * 100;
+	var coldPercent = (cold_count/4) * 100;
+<!-- Lines 42-43 are the initialized variables that my code will take into account at the "printAnswer()" function. -->
 	
         function allergyAdd(){
             allergy_count = allergy_count + 1;
