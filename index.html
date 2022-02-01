@@ -42,11 +42,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        
 	function allergyAdd(){
             allergy_count = allergy_count + 1;
+		console.log(allergy_count);
 
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
+		console.log(cold_count);
 
 <!-- Above are the two functions for each of the variables (allergy_count and cold_count). Once each funciton is run, the result will increase by 1. -->
 		
@@ -57,10 +59,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	{
 		
-		var resultText = document.getElementById("results");
 		var coldPercent = (cold_count/4) * 100
 		var allergyPercent = (allergy_count/4) * 100
 <!-- Above are the two variables that my code will take into account in the results section. In the results function, they will output the percentage that it may be a cold or allergies. -->
+		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%" + ; 
 <!-- The above function outputs the result of what was recorded in the allergy_count and cold_count variables and in the allergyPercent and coldPercent variables. I added the % sign in parentheses so it shows up on the results page next to the final perecentage.-->
 	}
