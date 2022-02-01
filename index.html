@@ -58,12 +58,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function printAnswer()
 	
 	{
-		
-		var coldPercent = (cold_count/4) * 100
-		var allergyPercent = (allergy_count/4) * 100
-<!-- Above are the two variables that my code will take into account in the results section. In the results function, they will output the percentage that it may be a cold or allergies. -->
+<!-- Below are the two variables that my code will take into account in the results section. In the results function, they will output the percentage that it may be a cold or allergies. -->
+		<!-- var coldPercent = (cold_count/4) * 100 -->
+		<!-- var allergyPercent = (allergy_count/4) * 100 -->
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%" + ; 
+		resultText.innerHTML = "Probability it is allergies = " + (allergy_count/4) * 100 + "%" + "<br> Probability it is a cold = " + (cold_count/4) * 100 + "%" + ; 
 <!-- The above function outputs the result of what was recorded in the allergy_count and cold_count variables and in the allergyPercent and coldPercent variables. I added the % sign in parentheses so it shows up on the results page next to the final perecentage.-->
 	}
 	
@@ -172,7 +171,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Cold or Allergies?: Results</h1>
 	</div>
 	
-<!-- Below is the "id" tag that allows the results to be outputted. On lines 60-64 of the code, the "id" tag is changed with an innerHTML command that prints the results in percentages. -->
+<!-- Below is the "id" tag that allows the results to be outputted. The "id" tag is changed with an innerHTML command that prints the results in percentages. -->
 	<div id="content" class="w3-container">
 	<p id="results"></p>
 	</div>
